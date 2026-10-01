@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>NSCDC CG Registry Management System</title>
+
+  <meta
+    name="description"
+    content="NSCDC CG Registry Management System - Electronic Searchable Registry Index"
+  >
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      min-height: 100vh;
+
+      background:
+        linear-gradient(
+          135deg,
+          #f4f7fa 0%,
+          #e8eef3 100%
+        );
+
+      color: #1f2937;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .card {
+      background: #ffffff;
+
+      border-radius: 18px;
+
+      box-shadow:
+        0 12px 35px
+        rgba(0, 0, 0, 0.10);
+
+      overflow: hidden;
+    }
+
+    .header {
+      background: #17365d;
+
+      color: #ffffff;
+
+      padding: 35px 30px;
+
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 28px;
+      font-weight: 700;
+
+      letter-spacing: 0.3px;
+    }
+
+    .header p {
+      margin-top: 10px;
+
+      font-size: 15px;
+
+      opacity: 0.92;
+    }
+
+    .body {
+      padding: 35px 30px;
+    }
+
+    .status {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      gap: 10px;
+
+      margin-bottom: 30px;
+
+      color: #38761d;
+
+      font-weight: 600;
+    }
+
+    .status-dot {
+      width: 10px;
+      height: 10px;
+
+      border-radius: 50%;
+
+      background: #38761d;
+    }
+
+    .welcome {
+      text-align: center;
+
+      max-width: 650px;
+
+      margin: 0 auto 30px;
+    }
+
+    .welcome h2 {
+      color: #17365d;
+
+      font-size: 22px;
+
+      margin-bottom: 12px;
+    }
+
+    .welcome p {
+      color: #5b6573;
+
+      line-height: 1.7;
+
+      font-size: 15px;
+    }
+
+    .modules {
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+      gap: 18px;
+
+      margin-top: 25px;
+    }
+
+    .module {
+      border: 1px solid #dce3e9;
+
+      border-radius: 12px;
+
+      padding: 22px;
+
+      background: #f9fbfc;
+    }
+
+    .module h3 {
+      color: #17365d;
+
+      font-size: 17px;
+
+      margin-bottom: 8px;
+    }
+
+    .module p {
+      color: #687586;
+
+      font-size: 14px;
+
+      line-height: 1.5;
+    }
+
+    .footer {
+      border-top: 1px solid #e5e7eb;
+
+      text-align: center;
+
+      padding: 20px;
+
+      color: #7a8491;
+
+      font-size: 12px;
+    }
+
+    @media (max-width: 650px) {
+
+      .header h1 {
+        font-size: 22px;
+      }
+
+      .modules {
+        grid-template-columns: 1fr;
+      }
+
+      .body {
+        padding: 25px 20px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="card">
+
+      <header class="header">
+
+        <h1>
+          NSCDC CG REGISTRY MANAGEMENT SYSTEM
+        </h1>
+
+        <p>
+          Electronic Searchable Registry Index
+        </p>
+
+      </header>
+
+
+      <main class="body">
+
+        <div class="status">
+
+          <span class="status-dot"></span>
+
+          System Online
+
+        </div>
+
+
+        <section class="welcome">
+
+          <h2>
+            Welcome to the CG Registry
+          </h2>
+
+          <p>
+            This system provides authorized Registry
+            personnel with a centralized electronic
+            index for locating incoming and outgoing
+            mail and file records.
+          </p>
+
+        </section>
+
+
+        <section class="modules">
+
+          <div class="module">
+
+            <h3>
+              Incoming Mail
+            </h3>
+
+            <p>
+              Search and locate incoming correspondence
+              recorded in the Registry.
+            </p>
+
+          </div>
+
+
+          <div class="module">
+
+            <h3>
+              Outgoing Mail
+            </h3>
+
+            <p>
+              Search outgoing correspondence and
+              associated Registry information.
+            </p>
+
+          </div>
+
+
+          <div class="module">
+
+            <h3>
+              Incoming Files
+            </h3>
+
+            <p>
+              Locate files brought into the CG Registry
+              from departments.
+            </p>
+
+          </div>
+
+
+          <div class="module">
+
+            <h3>
+              Outgoing Files
+            </h3>
+
+            <p>
+              Locate files directed from the CG Registry
+              to departments and recipients.
+            </p>
+
+          </div>
+
+        </section>
+
+      </main>
+
+
+      <footer class="footer">
+
+        NSCDC CG'S Registry Management System
+
+        <br>
+
+        Electronic Searchable Registry Index
+
+      </footer>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
